@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="form-box-background">
+    <div id="form-box">
+      <div id="header">Registration Form</div>
+      <form id="form-container" name="formPendaftaran" method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label id="label-text" for="name">Nama</label>
+          <input autocomplete="off" id="name" type="text" name="nama" placeholder="Nama lengkap" class="form-control">
+        </div>
+        <div class="form-group">
+          <label id="label-text" for="nrp">NRP</label>
+          <input autocomplete="off" id="nrp" type="text" name="nrp" placeholder="Nama lengkap" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Mata Kuliah</label>
+          <select name="mataKuliah" class="form-control">
+            <option value="0">Pilih Mata Kuliah</option>
+            <option value="1">RSBP</option>
+            <option value="2">PWEB</option>
+            <option value="3">PBKK</option>
+            <option value="4">Jaringan Komputer</option>
+            <option value="5">Pemodelan dan Simulasi</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
